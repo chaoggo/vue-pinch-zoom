@@ -1,17 +1,24 @@
 {
-  "name": "vue-pinch-zoom",
-  "version": "0.1.0",
+  "name": "chaoggo-ui",
+  "version": "0.1.1",
   "private": true,
+  "main": "lib/chaoggo-ui.umd.js",
+  "module": "lib/chaoggo-ui.umd.js",
+  "keywords": "chaoggo ui",
+  "repository": "chaoggo",
+  "homepage": "chaoggo",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name chaoggo-ui --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.4.4",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
-    "vue-property-decorator": "^8.3.0"
+    "vue-property-decorator": "^8.3.0",
+    "vue-zoomer": "^0.3.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
